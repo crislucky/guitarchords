@@ -1,0 +1,105 @@
+<div class="top">
+    <div class="inner clearfix">
+        <p>赞美诗 - 热爱喜欢吉他的聚集地</p>
+        <ul>
+            <li><a href="#">欢迎您！游客</a></li>
+            <li><a href="register.html">注册</a>|<a href="Login.html">登陆</a></li>
+            <li><a href="#"><img src="images/right-icon2.png" class="icons"></a></li>
+            <li><a href="#"><img src="images/right-icon-home.png" class="icons"></a></li>
+        </ul>
+    </div>
+</div>
+<div class="header clearfix">
+    <div class="inner">
+        <h1><img src="images/logo_03.jpg" alt="赞美诗 - 热爱喜欢吉他的聚集地"></h1>
+        <form>
+            <input type="text" placeholder="查找您喜欢的吉他谱"><input type="button" value="&nbsp;搜索">
+            <ul class="clearfix">
+                <li>最新热门 :</li>
+                <li>爸爸去哪</li>
+                <li>明明就</li>
+                <li>我的歌声里</li>
+                <li>再见青春</li>
+                <li>老男孩</li>
+                <li>滴答</li>
+            </ul>
+        </form>
+    </div>
+</div>
+<div class="nav">
+    <div class="inner">
+        <ul class="clearfix">
+            <li>
+                <p><a href="index.html">首页</a></p>
+                <span>HOME</span>
+            </li>
+            <li>
+                <p><a href="music.html">吉他谱</a></p>
+                <span>GUITAR TABS</span>
+            </li>
+            <li>
+                <p><a href="nmn.html">简谱</a></p>
+                <span>NMN</span>
+            </li>
+            <li>
+                <p><a href="news.html">新闻区</a></p>
+                <span>NEWS</span>
+            </li>
+            <li>
+                <p><a href="tabs.html#1">版权声明</a></p>
+                <span>COPYRIGHT</span>
+            </li>
+            <li>
+                <p><a href="tabs.html#2">支持我们</a></p>
+                <span>SUPPORT US</span>
+            </li>
+            <li>
+                <p><a href="tabs.html#3">团队介绍</a></p>
+                <span>OUR TEAM</span>
+            </li>
+            <li>
+                <p><a href="tabs.html#4">加入我们</a></p>
+                <span>JOIN US</span>
+            </li>
+        </ul>
+    </div>
+</div>
+<script>
+    (function(){
+        $('.header input[type="button"]').click(function(){
+            location.href="search.html";
+        });
+        var navLink=$(".nav li a");
+        var navLi=$(".nav li");
+        if(location.href.indexOf("index.html")!=-1){
+            navLi.eq(0).addClass("active");
+        }
+        else if(location.href.indexOf("music.html")!=-1){
+            navLi.eq(1).addClass("active");
+        }
+        else if(location.href.indexOf("nmn.html")!=-1){
+            navLi.eq(2).addClass("active");
+        }
+        else if(location.href.indexOf("news.html")!=-1){
+            navLi.eq(3).addClass("active");
+        }
+        else if(location.href.indexOf("tabs.html#1")!=-1){
+            navLi.eq(4).addClass("active");
+        }
+        else if(location.href.indexOf("tabs.html#2")!=-1){
+            navLi.eq(5).addClass("active");
+        }
+        else if(location.href.indexOf("tabs.html#3")!=-1){
+            navLi.eq(6).addClass("active");
+        }
+        else if(location.href.indexOf("tabs.html#4")!=-1){
+            navLi.eq(7).addClass("active");
+        }
+        navLink.click(function(){
+            navLink.parents().removeClass("active");
+            $(this).parents().addClass("active");
+        })
+    })()
+
+
+</script>

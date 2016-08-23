@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>赞美诗吉他谱网</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery-1.7.2.js"></script>
+</head>
+<body>
+    <div class="fullscreenPic">
+        <div class="fullscreenTitle">
+            <span class="fl">小苹果</span>
+            <div class="scroll fr">
+                滚屏速度:<a href="javascript:;">-</a><span>1</span><a href="javascript:;">+</a><a class="startScroll" href="javascript:;">开始滚屏</a><a
+                    href="javascript:;" class="rythom">节拍器</a>
+            </div>
+        </div>
+        <div class="inner">
+            <div class="bigPic">
+                <img src="images/bigpic.jpg" alt="大图">
+            </div>
+        </div>
+        <div class="fullscreenFooter">
+            <p>
+            Copyright © 2011 Chapuw. All rights reserved.<br>
+            赞美诗  版权所有 京ICP备11000091号-4站长统计<br>
+            赞美诗 上的歌谱和资料均为网友提供或推荐收集整理而来，仅供学习和研究使用，版权归原作者或出版社所有。如有侵犯您的版权，请来信指出，我们立即改正删除
+            </p>
+        </div>
+    </div>
+</body>
+<script>
+    (function(){
+        var fullscreenPic=$(".fullscreenPic");
+        $(window).resize(function(){
+            fullscreenPic.width($(window).width());
+        });
+        fullscreenPic.width($(window).width());
+    })();
+
+</script>
+</html>
